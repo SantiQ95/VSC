@@ -1,0 +1,90 @@
+*# Operating System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.o
+*.lo
+*.la
+*.al
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.bak
+*.aux
+*.log
+*.lof
+*.lot
+*.fls
+*.out
+*.toc
+*.blg
+*.bbl
+*.nav
+*.snm
+*.vrb
+*.vsc
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.dmg
+*.iso
+
+# IDE and Editor Specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.iml
+*.iws
+*.ipr
+nbproject/
+*.esproj
+.vs/
+*.sln
+*.suo
+*.user
+
+# Dependency management directories
+node_modules/
+vendor/
+build/
+dist/
+target/
+tmp/
+temp/
+log/
+logs/
+cache/
+
+# Environment variables and secrets
+.env
+.flaskenv
+.venv/
+
+# Testing and Coverage
+.nyc_output/
+coverage/
+.jest_cache/
+.pytest_cache/
+
+# Common user-generated directories/files
+upload/
+uploads/
+download/
+downloads/
+
+# Database files
+*.sqlite3
+*.db
+*.sql
+
+# Thumbnails and generated images
+*.thumbnails
+*.thumb
