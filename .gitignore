@@ -1,4 +1,4 @@
-*# Operating System files
+# Operating System files
 .DS_Store
 Thumbs.db
 
@@ -88,3 +88,8 @@ downloads/
 # Thumbnails and generated images
 *.thumbnails
 *.thumb
+# Python virtual environments
+.venv/
+venv/
+env/
+.env

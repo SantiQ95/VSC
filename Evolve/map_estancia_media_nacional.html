@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1f78bdba2a561454f1b1201eef391d62 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1f78bdba2a561454f1b1201eef391d62" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1f78bdba2a561454f1b1201eef391d62 = L.map(
+                "map_1f78bdba2a561454f1b1201eef391d62",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_900b933f66f20c56648abb70a012f36a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_900b933f66f20c56648abb70a012f36a.addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var marker_470f59e5b8e6822b305b4d5befde339c = L.marker(
+                [37.5443, -4.7278],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_dcbb9804ea33d83c3f07a352e2e8e32f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f88b1139e7e6767a28904ad19d28dcae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9e76d6220cce22a966f3746308aba67 = $(`<div id="html_e9e76d6220cce22a966f3746308aba67" style="width: 100.0%; height: 100.0%;">Andalucía: 7.26 noches</div>`)[0];
+                popup_f88b1139e7e6767a28904ad19d28dcae.setContent(html_e9e76d6220cce22a966f3746308aba67);
+            
+        
+
+        marker_470f59e5b8e6822b305b4d5befde339c.bindPopup(popup_f88b1139e7e6767a28904ad19d28dcae)
+        ;
+
+        
+    
+    
+                marker_470f59e5b8e6822b305b4d5befde339c.setIcon(icon_dcbb9804ea33d83c3f07a352e2e8e32f);
+            
+    
+            var marker_7c5d0ff2f6037ed9c60e2c6aff87a111 = L.marker(
+                [41.5976, -0.9057],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_63d2ac1d57762f20c72a378139c246d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e360462d41149c1a1c90433edd10ce23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca9352b4122c1be5a63c9e9ac6426d47 = $(`<div id="html_ca9352b4122c1be5a63c9e9ac6426d47" style="width: 100.0%; height: 100.0%;">Aragón: 6.42 noches</div>`)[0];
+                popup_e360462d41149c1a1c90433edd10ce23.setContent(html_ca9352b4122c1be5a63c9e9ac6426d47);
+            
+        
+
+        marker_7c5d0ff2f6037ed9c60e2c6aff87a111.bindPopup(popup_e360462d41149c1a1c90433edd10ce23)
+        ;
+
+        
+    
+    
+                marker_7c5d0ff2f6037ed9c60e2c6aff87a111.setIcon(icon_63d2ac1d57762f20c72a378139c246d9);
+            
+    
+            var marker_b2a518b1f0ad345d0bc2060a32d2cc39 = L.marker(
+                [28.2916, -16.6291],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_89988fd16f266c4087edc54abd6d7a86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4df3bb82a8eeb1bca34b9628c97d4f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c6d3db449f7515e79ce99476b224b1d = $(`<div id="html_1c6d3db449f7515e79ce99476b224b1d" style="width: 100.0%; height: 100.0%;">Canarias: 8.51 noches</div>`)[0];
+                popup_a4df3bb82a8eeb1bca34b9628c97d4f4.setContent(html_1c6d3db449f7515e79ce99476b224b1d);
+            
+        
+
+        marker_b2a518b1f0ad345d0bc2060a32d2cc39.bindPopup(popup_a4df3bb82a8eeb1bca34b9628c97d4f4)
+        ;
+
+        
+    
+    
+                marker_b2a518b1f0ad345d0bc2060a32d2cc39.setIcon(icon_89988fd16f266c4087edc54abd6d7a86);
+            
+    
+            var marker_b3d807ea5a00239219aea9e978925d78 = L.marker(
+                [43.1828, -3.9878],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_ae8e8678db4f0ed42f8f1fa8e4cb508c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e3a83bc67cee2aa905480dd36119d9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf03d66958435107298885ead9b06c82 = $(`<div id="html_cf03d66958435107298885ead9b06c82" style="width: 100.0%; height: 100.0%;">Cantabria: 7.40 noches</div>`)[0];
+                popup_0e3a83bc67cee2aa905480dd36119d9f.setContent(html_cf03d66958435107298885ead9b06c82);
+            
+        
+
+        marker_b3d807ea5a00239219aea9e978925d78.bindPopup(popup_0e3a83bc67cee2aa905480dd36119d9f)
+        ;
+
+        
+    
+    
+                marker_b3d807ea5a00239219aea9e978925d78.setIcon(icon_ae8e8678db4f0ed42f8f1fa8e4cb508c);
+            
+    
+            var marker_1484c3223bffd82d05bb8b18e582b6f3 = L.marker(
+                [39.2796, -3.0977],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_ac84dfcf9285355e3b52ea92958662a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8177883cfd2c6de7d18531a91af0491 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e68a122eca10f1b1150209049712251e = $(`<div id="html_e68a122eca10f1b1150209049712251e" style="width: 100.0%; height: 100.0%;">Castilla - La Mancha: 5.92 noches</div>`)[0];
+                popup_e8177883cfd2c6de7d18531a91af0491.setContent(html_e68a122eca10f1b1150209049712251e);
+            
+        
+
+        marker_1484c3223bffd82d05bb8b18e582b6f3.bindPopup(popup_e8177883cfd2c6de7d18531a91af0491)
+        ;
+
+        
+    
+    
+                marker_1484c3223bffd82d05bb8b18e582b6f3.setIcon(icon_ac84dfcf9285355e3b52ea92958662a5);
+            
+    
+            var marker_a59075bb8dc0f85881af9e19a9be0932 = L.marker(
+                [41.8357, -4.3976],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_2bedafb47a9c50f27e88061cbde7b726 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c07a4c13dad1b892a7985ac8809de590 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_768172e0e5ccc2c50ec3953d3259a819 = $(`<div id="html_768172e0e5ccc2c50ec3953d3259a819" style="width: 100.0%; height: 100.0%;">Castilla y León: 6.65 noches</div>`)[0];
+                popup_c07a4c13dad1b892a7985ac8809de590.setContent(html_768172e0e5ccc2c50ec3953d3259a819);
+            
+        
+
+        marker_a59075bb8dc0f85881af9e19a9be0932.bindPopup(popup_c07a4c13dad1b892a7985ac8809de590)
+        ;
+
+        
+    
+    
+                marker_a59075bb8dc0f85881af9e19a9be0932.setIcon(icon_2bedafb47a9c50f27e88061cbde7b726);
+            
+    
+            var marker_a84be00866ed7376a8229407f468bd03 = L.marker(
+                [41.8205, 1.8677],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_d88c2b1c5fcdb3eabe30147bc20a67f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8abbf69c784b446ffda6216b44359d36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7292e4b5e64c6aa4e557fc9b7946b19 = $(`<div id="html_f7292e4b5e64c6aa4e557fc9b7946b19" style="width: 100.0%; height: 100.0%;">Cataluña: 6.54 noches</div>`)[0];
+                popup_8abbf69c784b446ffda6216b44359d36.setContent(html_f7292e4b5e64c6aa4e557fc9b7946b19);
+            
+        
+
+        marker_a84be00866ed7376a8229407f468bd03.bindPopup(popup_8abbf69c784b446ffda6216b44359d36)
+        ;
+
+        
+    
+    
+                marker_a84be00866ed7376a8229407f468bd03.setIcon(icon_d88c2b1c5fcdb3eabe30147bc20a67f1);
+            
+    
+            var marker_a9f70a2de252e9a5605c4c7b98bdea25 = L.marker(
+                [35.8893, -5.3198],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_a0d1a17188d202f628080bfbdb7ded3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43478c50a9488eaab977ae467b3194d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33b9892508f374ad9d89fbdb72e62a91 = $(`<div id="html_33b9892508f374ad9d89fbdb72e62a91" style="width: 100.0%; height: 100.0%;">Ceuta: 4.76 noches</div>`)[0];
+                popup_43478c50a9488eaab977ae467b3194d0.setContent(html_33b9892508f374ad9d89fbdb72e62a91);
+            
+        
+
+        marker_a9f70a2de252e9a5605c4c7b98bdea25.bindPopup(popup_43478c50a9488eaab977ae467b3194d0)
+        ;
+
+        
+    
+    
+                marker_a9f70a2de252e9a5605c4c7b98bdea25.setIcon(icon_a0d1a17188d202f628080bfbdb7ded3c);
+            
+    
+            var marker_3f5f656fb60ceece07358c664dbc597c = L.marker(
+                [42.6954, -1.6761],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_2ad53dc8b63178a78c61b4f5214c8cc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f12b05af8269fe8e79d14894474e6037 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f775a79c6a59149911cddd2b8a5a1ad8 = $(`<div id="html_f775a79c6a59149911cddd2b8a5a1ad8" style="width: 100.0%; height: 100.0%;">Comunidad Foral de Navarra: 5.81 noches</div>`)[0];
+                popup_f12b05af8269fe8e79d14894474e6037.setContent(html_f775a79c6a59149911cddd2b8a5a1ad8);
+            
+        
+
+        marker_3f5f656fb60ceece07358c664dbc597c.bindPopup(popup_f12b05af8269fe8e79d14894474e6037)
+        ;
+
+        
+    
+    
+                marker_3f5f656fb60ceece07358c664dbc597c.setIcon(icon_2ad53dc8b63178a78c61b4f5214c8cc5);
+            
+    
+            var marker_6a3e6381674d5b448d4af7c2f4c4d6a4 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_5266f9190aa4f63ce82bdfaac46062d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35800e290c124636406dd01616ae0215 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5a4167f929705ec157bd2bf7008cb89 = $(`<div id="html_d5a4167f929705ec157bd2bf7008cb89" style="width: 100.0%; height: 100.0%;">Comunidad de Madrid: 7.03 noches</div>`)[0];
+                popup_35800e290c124636406dd01616ae0215.setContent(html_d5a4167f929705ec157bd2bf7008cb89);
+            
+        
+
+        marker_6a3e6381674d5b448d4af7c2f4c4d6a4.bindPopup(popup_35800e290c124636406dd01616ae0215)
+        ;
+
+        
+    
+    
+                marker_6a3e6381674d5b448d4af7c2f4c4d6a4.setIcon(icon_5266f9190aa4f63ce82bdfaac46062d1);
+            
+    
+            var marker_269454599fe5bda9ab02a9fd0202a36c = L.marker(
+                [39.484, -0.7533],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_a14d05772980207bc79f7e98b1cbb092 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ae9f5a23503af8123f709c531235af2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83e0610d495a246c205b968055b2cedb = $(`<div id="html_83e0610d495a246c205b968055b2cedb" style="width: 100.0%; height: 100.0%;">Comunitat Valenciana: 8.08 noches</div>`)[0];
+                popup_6ae9f5a23503af8123f709c531235af2.setContent(html_83e0610d495a246c205b968055b2cedb);
+            
+        
+
+        marker_269454599fe5bda9ab02a9fd0202a36c.bindPopup(popup_6ae9f5a23503af8123f709c531235af2)
+        ;
+
+        
+    
+    
+                marker_269454599fe5bda9ab02a9fd0202a36c.setIcon(icon_a14d05772980207bc79f7e98b1cbb092);
+            
+    
+            var marker_8de90b19a64a9b8c33d6ab7e2c46d7f2 = L.marker(
+                [39.2238, -6.3382],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_edd379c8b8c71ab99520e93d5d0b3ea8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e20079a3a1362ad65e65b980ec0936ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c400ccc3f10afa5967792e025d0f66e1 = $(`<div id="html_c400ccc3f10afa5967792e025d0f66e1" style="width: 100.0%; height: 100.0%;">Extremadura: 7.28 noches</div>`)[0];
+                popup_e20079a3a1362ad65e65b980ec0936ef.setContent(html_c400ccc3f10afa5967792e025d0f66e1);
+            
+        
+
+        marker_8de90b19a64a9b8c33d6ab7e2c46d7f2.bindPopup(popup_e20079a3a1362ad65e65b980ec0936ef)
+        ;
+
+        
+    
+    
+                marker_8de90b19a64a9b8c33d6ab7e2c46d7f2.setIcon(icon_edd379c8b8c71ab99520e93d5d0b3ea8);
+            
+    
+            var marker_9dd46a5deb74b8445eaa0e02c943e515 = L.marker(
+                [42.5751, -8.1339],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_56cd077ccfec82e87ccd72942dbc3a86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1e51f317c48476dc59875c7989681ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ebbcec5515aed81b27b76b6b67417dc = $(`<div id="html_3ebbcec5515aed81b27b76b6b67417dc" style="width: 100.0%; height: 100.0%;">Galicia: 7.52 noches</div>`)[0];
+                popup_d1e51f317c48476dc59875c7989681ac.setContent(html_3ebbcec5515aed81b27b76b6b67417dc);
+            
+        
+
+        marker_9dd46a5deb74b8445eaa0e02c943e515.bindPopup(popup_d1e51f317c48476dc59875c7989681ac)
+        ;
+
+        
+    
+    
+                marker_9dd46a5deb74b8445eaa0e02c943e515.setIcon(icon_56cd077ccfec82e87ccd72942dbc3a86);
+            
+    
+            var marker_eb627e96226a47dd5d0f4b53f59f546b = L.marker(
+                [39.6953, 3.0176],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_22ebfdb0349b54f2c03965e09ef8b860 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c5b109367edecd06f8158d0211554a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d355e49718a23f30200bda2ef7fe7f9 = $(`<div id="html_1d355e49718a23f30200bda2ef7fe7f9" style="width: 100.0%; height: 100.0%;">Illes Balears: 7.08 noches</div>`)[0];
+                popup_2c5b109367edecd06f8158d0211554a5.setContent(html_1d355e49718a23f30200bda2ef7fe7f9);
+            
+        
+
+        marker_eb627e96226a47dd5d0f4b53f59f546b.bindPopup(popup_2c5b109367edecd06f8158d0211554a5)
+        ;
+
+        
+    
+    
+                marker_eb627e96226a47dd5d0f4b53f59f546b.setIcon(icon_22ebfdb0349b54f2c03965e09ef8b860);
+            
+    
+            var marker_73b96ffee3808720141a126f89d0b1ea = L.marker(
+                [42.2871, -2.5396],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_a6ecbe22be7f5987445e3abf0d61c1e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d74104c11effbf7ae5887dfffc222180 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c48ada9cfbac92118e05a82c67a31152 = $(`<div id="html_c48ada9cfbac92118e05a82c67a31152" style="width: 100.0%; height: 100.0%;">La Rioja: 6.33 noches</div>`)[0];
+                popup_d74104c11effbf7ae5887dfffc222180.setContent(html_c48ada9cfbac92118e05a82c67a31152);
+            
+        
+
+        marker_73b96ffee3808720141a126f89d0b1ea.bindPopup(popup_d74104c11effbf7ae5887dfffc222180)
+        ;
+
+        
+    
+    
+                marker_73b96ffee3808720141a126f89d0b1ea.setIcon(icon_a6ecbe22be7f5987445e3abf0d61c1e7);
+            
+    
+            var marker_c94e9d811ce4b61636b56fc3b735659f = L.marker(
+                [35.2937, -2.9383],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_6df8673678403b19604a1c5c47809e92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2941b915d5ce323818890f7d8d98863 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73292624897eb247b422da3e53d5a97a = $(`<div id="html_73292624897eb247b422da3e53d5a97a" style="width: 100.0%; height: 100.0%;">Melilla: 3.89 noches</div>`)[0];
+                popup_b2941b915d5ce323818890f7d8d98863.setContent(html_73292624897eb247b422da3e53d5a97a);
+            
+        
+
+        marker_c94e9d811ce4b61636b56fc3b735659f.bindPopup(popup_b2941b915d5ce323818890f7d8d98863)
+        ;
+
+        
+    
+    
+                marker_c94e9d811ce4b61636b56fc3b735659f.setIcon(icon_6df8673678403b19604a1c5c47809e92);
+            
+    
+            var marker_7a9b3770ccd33e0a9641bd5b7dba7adc = L.marker(
+                [43.0433, -2.4125],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_080983418df20bd9d6b461e99fff4e2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9879ec4b035534441126f779d5d68b5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a36ce32185c1c3ffcccd31c44716de0 = $(`<div id="html_7a36ce32185c1c3ffcccd31c44716de0" style="width: 100.0%; height: 100.0%;">País Vasco: 5.89 noches</div>`)[0];
+                popup_9879ec4b035534441126f779d5d68b5a.setContent(html_7a36ce32185c1c3ffcccd31c44716de0);
+            
+        
+
+        marker_7a9b3770ccd33e0a9641bd5b7dba7adc.bindPopup(popup_9879ec4b035534441126f779d5d68b5a)
+        ;
+
+        
+    
+    
+                marker_7a9b3770ccd33e0a9641bd5b7dba7adc.setIcon(icon_080983418df20bd9d6b461e99fff4e2f);
+            
+    
+            var marker_1c3d344d76b285c1083ba07f5653376a = L.marker(
+                [43.3614, -5.8593],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_c2221144934c0e9d46764a5db64a108b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48db1ee623489c8d6bed26649fb4b5fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fffa300186cd7389d281a448e945e96f = $(`<div id="html_fffa300186cd7389d281a448e945e96f" style="width: 100.0%; height: 100.0%;">Principado de Asturias: 7.93 noches</div>`)[0];
+                popup_48db1ee623489c8d6bed26649fb4b5fe.setContent(html_fffa300186cd7389d281a448e945e96f);
+            
+        
+
+        marker_1c3d344d76b285c1083ba07f5653376a.bindPopup(popup_48db1ee623489c8d6bed26649fb4b5fe)
+        ;
+
+        
+    
+    
+                marker_1c3d344d76b285c1083ba07f5653376a.setIcon(icon_c2221144934c0e9d46764a5db64a108b);
+            
+    
+            var marker_bc2d92de71214078593c1528e4e46046 = L.marker(
+                [37.9922, -1.1307],
+                {
+}
+            ).addTo(map_1f78bdba2a561454f1b1201eef391d62);
+        
+    
+            var icon_2fd5d18bccd17329d13da4aab3349100 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1fb123a61e14830d03e58ff64704b239 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06d2126cff4026c5ec484d2af8485ad1 = $(`<div id="html_06d2126cff4026c5ec484d2af8485ad1" style="width: 100.0%; height: 100.0%;">Región de Murcia: 8.20 noches</div>`)[0];
+                popup_1fb123a61e14830d03e58ff64704b239.setContent(html_06d2126cff4026c5ec484d2af8485ad1);
+            
+        
+
+        marker_bc2d92de71214078593c1528e4e46046.bindPopup(popup_1fb123a61e14830d03e58ff64704b239)
+        ;
+
+        
+    
+    
+                marker_bc2d92de71214078593c1528e4e46046.setIcon(icon_2fd5d18bccd17329d13da4aab3349100);
+            
+</script>
+</html>

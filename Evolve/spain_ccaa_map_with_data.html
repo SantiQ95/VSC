@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fae34bee18eb3bfb0935d6ffaa9ab6f5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fae34bee18eb3bfb0935d6ffaa9ab6f5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fae34bee18eb3bfb0935d6ffaa9ab6f5 = L.map(
+                "map_fae34bee18eb3bfb0935d6ffaa9ab6f5",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f71bebfdc03b89a72ef353c734e0e92c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f71bebfdc03b89a72ef353c734e0e92c.addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var marker_5820fef59d3ea35a05a444b13155384c = L.marker(
+                [37.5443, -4.7278],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_16981e6aed21fe7ab2ab33b9946fff10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c563d343d6e3738e7710f2f37b0f6701 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a797dbcddf152fc743c7e9230e2a9cd3 = $(`<div id="html_a797dbcddf152fc743c7e9230e2a9cd3" style="width: 100.0%; height: 100.0%;">         <b>Andalucía</b><br>         🧍‍♂️ Turistas Nacionales: 113,884,346<br>         🛏️ Pernoctaciones: 658,425,832<br>         📊 Estancia media: 5.68 días         </div>`)[0];
+                popup_c563d343d6e3738e7710f2f37b0f6701.setContent(html_a797dbcddf152fc743c7e9230e2a9cd3);
+            
+        
+
+        marker_5820fef59d3ea35a05a444b13155384c.bindPopup(popup_c563d343d6e3738e7710f2f37b0f6701)
+        ;
+
+        
+    
+    
+                marker_5820fef59d3ea35a05a444b13155384c.setIcon(icon_16981e6aed21fe7ab2ab33b9946fff10);
+            
+    
+            var marker_df18dd7ae3017b455ad234c2648ce9ab = L.marker(
+                [41.5976, -0.9057],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_711d906d9a1106f18892cd815d958609 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88a34542aee743a7b844cc4ea23935e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c565e271760963503f4be1c2184449ad = $(`<div id="html_c565e271760963503f4be1c2184449ad" style="width: 100.0%; height: 100.0%;">         <b>Aragón</b><br>         🧍‍♂️ Turistas Nacionales: 19,255,871<br>         🛏️ Pernoctaciones: 93,551,827<br>         📊 Estancia media: 4.78 días         </div>`)[0];
+                popup_88a34542aee743a7b844cc4ea23935e0.setContent(html_c565e271760963503f4be1c2184449ad);
+            
+        
+
+        marker_df18dd7ae3017b455ad234c2648ce9ab.bindPopup(popup_88a34542aee743a7b844cc4ea23935e0)
+        ;
+
+        
+    
+    
+                marker_df18dd7ae3017b455ad234c2648ce9ab.setIcon(icon_711d906d9a1106f18892cd815d958609);
+            
+    
+            var marker_8836a92ea2f474c9a7361130155440c5 = L.marker(
+                [43.3614, -5.8593],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_d0ebd3f9cabb7f01578c1c7828b0ba4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7872c52f21516116ad99619b7b055be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95cd5daa89f082c2166ba713e48afddb = $(`<div id="html_95cd5daa89f082c2166ba713e48afddb" style="width: 100.0%; height: 100.0%;">         <b>Principado de Asturias</b><br>         🧍‍♂️ Turistas Nacionales: 8,632,871<br>         🛏️ Pernoctaciones: 51,995,128<br>         📊 Estancia media: 5.75 días         </div>`)[0];
+                popup_f7872c52f21516116ad99619b7b055be.setContent(html_95cd5daa89f082c2166ba713e48afddb);
+            
+        
+
+        marker_8836a92ea2f474c9a7361130155440c5.bindPopup(popup_f7872c52f21516116ad99619b7b055be)
+        ;
+
+        
+    
+    
+                marker_8836a92ea2f474c9a7361130155440c5.setIcon(icon_d0ebd3f9cabb7f01578c1c7828b0ba4c);
+            
+    
+            var marker_b25f3d0471355737c1f007be6809457d = L.marker(
+                [39.6953, 3.0176],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_b532c9ad2ff9ad13ca39c728cf1bb788 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_296ac8378b19f4170e655a5b67a7f3bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f87caf07ff2afb5b93236ede30a9683c = $(`<div id="html_f87caf07ff2afb5b93236ede30a9683c" style="width: 100.0%; height: 100.0%;">         <b>Illes Balears</b><br>         🧍‍♂️ Turistas Nacionales: 50,048,102<br>         🛏️ Pernoctaciones: 317,416,482<br>         📊 Estancia media: 6.58 días         </div>`)[0];
+                popup_296ac8378b19f4170e655a5b67a7f3bf.setContent(html_f87caf07ff2afb5b93236ede30a9683c);
+            
+        
+
+        marker_b25f3d0471355737c1f007be6809457d.bindPopup(popup_296ac8378b19f4170e655a5b67a7f3bf)
+        ;
+
+        
+    
+    
+                marker_b25f3d0471355737c1f007be6809457d.setIcon(icon_b532c9ad2ff9ad13ca39c728cf1bb788);
+            
+    
+            var marker_3157fa178e8213d9db2cd3c9dc264604 = L.marker(
+                [43.0433, -2.4125],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_5a53947de54948124e4cb113ebb1b749 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b3214db3a44262ad3a689b251c32175e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d589e518c0a1750fcf9c7b48a9dce31b = $(`<div id="html_d589e518c0a1750fcf9c7b48a9dce31b" style="width: 100.0%; height: 100.0%;">         <b>País Vasco</b><br>         🧍‍♂️ Turistas Nacionales: 23,664,353<br>         🛏️ Pernoctaciones: 127,573,184<br>         📊 Estancia media: 5.35 días         </div>`)[0];
+                popup_b3214db3a44262ad3a689b251c32175e.setContent(html_d589e518c0a1750fcf9c7b48a9dce31b);
+            
+        
+
+        marker_3157fa178e8213d9db2cd3c9dc264604.bindPopup(popup_b3214db3a44262ad3a689b251c32175e)
+        ;
+
+        
+    
+    
+                marker_3157fa178e8213d9db2cd3c9dc264604.setIcon(icon_5a53947de54948124e4cb113ebb1b749);
+            
+    
+            var marker_ed374dc77622240a778498e0ad6758dc = L.marker(
+                [28.2916, -16.6291],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_bf6fdb1a0e3853783b9c533b1f25bfce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5acf35a999fce35954f93557106ec7f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c906fa911fbc7b55d77e6d503ccc4417 = $(`<div id="html_c906fa911fbc7b55d77e6d503ccc4417" style="width: 100.0%; height: 100.0%;">         <b>Canarias</b><br>         🧍‍♂️ Turistas Nacionales: 51,952,997<br>         🛏️ Pernoctaciones: 399,821,615<br>         📊 Estancia media: 7.69 días         </div>`)[0];
+                popup_f5acf35a999fce35954f93557106ec7f.setContent(html_c906fa911fbc7b55d77e6d503ccc4417);
+            
+        
+
+        marker_ed374dc77622240a778498e0ad6758dc.bindPopup(popup_f5acf35a999fce35954f93557106ec7f)
+        ;
+
+        
+    
+    
+                marker_ed374dc77622240a778498e0ad6758dc.setIcon(icon_bf6fdb1a0e3853783b9c533b1f25bfce);
+            
+    
+            var marker_5ac86bb5200506e3532a4bc8dce97a30 = L.marker(
+                [43.1828, -3.9878],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_cdfe6d06144ac09f518f5ccb052a3fc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6838ac31b1a1f9893a660eee548a2b44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c8f7e6d130df5606be583679f45ef26 = $(`<div id="html_6c8f7e6d130df5606be583679f45ef26" style="width: 100.0%; height: 100.0%;">         <b>Cantabria</b><br>         🧍‍♂️ Turistas Nacionales: 9,973,528<br>         🛏️ Pernoctaciones: 51,086,650<br>         📊 Estancia media: 4.78 días         </div>`)[0];
+                popup_6838ac31b1a1f9893a660eee548a2b44.setContent(html_6c8f7e6d130df5606be583679f45ef26);
+            
+        
+
+        marker_5ac86bb5200506e3532a4bc8dce97a30.bindPopup(popup_6838ac31b1a1f9893a660eee548a2b44)
+        ;
+
+        
+    
+    
+                marker_5ac86bb5200506e3532a4bc8dce97a30.setIcon(icon_cdfe6d06144ac09f518f5ccb052a3fc5);
+            
+    
+            var marker_a8d66565f8fcb8cd9c63e92b5b57ba22 = L.marker(
+                [41.8357, -4.3976],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_2f12d84bbe90998bf64599b0ef13bbc4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82db0afdbdca1eaa8603a47579f6ec0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fbb6f9c44f02b89ccaab399633bdcd23 = $(`<div id="html_fbb6f9c44f02b89ccaab399633bdcd23" style="width: 100.0%; height: 100.0%;">         <b>Castilla y León</b><br>         🧍‍♂️ Turistas Nacionales: 44,068,017<br>         🛏️ Pernoctaciones: 211,447,959<br>         📊 Estancia media: 4.67 días         </div>`)[0];
+                popup_82db0afdbdca1eaa8603a47579f6ec0e.setContent(html_fbb6f9c44f02b89ccaab399633bdcd23);
+            
+        
+
+        marker_a8d66565f8fcb8cd9c63e92b5b57ba22.bindPopup(popup_82db0afdbdca1eaa8603a47579f6ec0e)
+        ;
+
+        
+    
+    
+                marker_a8d66565f8fcb8cd9c63e92b5b57ba22.setIcon(icon_2f12d84bbe90998bf64599b0ef13bbc4);
+            
+    
+            var marker_7ed1ba52f70dc36b0b2511635e6abae7 = L.marker(
+                [39.2796, -3.0977],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_3b5f503483e158b48447a2d579d4ea5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_836b7e44626c1a8a84ae56eb17c80c33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4c950c22c7f4a8dca96cc37d3d68683 = $(`<div id="html_a4c950c22c7f4a8dca96cc37d3d68683" style="width: 100.0%; height: 100.0%;">         <b>Castilla - La Mancha</b><br>         🧍‍♂️ Turistas Nacionales: 32,488,256<br>         🛏️ Pernoctaciones: 138,466,759<br>         📊 Estancia media: 4.19 días         </div>`)[0];
+                popup_836b7e44626c1a8a84ae56eb17c80c33.setContent(html_a4c950c22c7f4a8dca96cc37d3d68683);
+            
+        
+
+        marker_7ed1ba52f70dc36b0b2511635e6abae7.bindPopup(popup_836b7e44626c1a8a84ae56eb17c80c33)
+        ;
+
+        
+    
+    
+                marker_7ed1ba52f70dc36b0b2511635e6abae7.setIcon(icon_3b5f503483e158b48447a2d579d4ea5a);
+            
+    
+            var marker_5fecef5fd6d4adc3ca09f9b9242093a5 = L.marker(
+                [41.8205, 1.8677],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_49105ba11e99d35aaba6f3b9922aee77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f1a68d6ecfeeb9ecfdfe301ec665c80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3d3d8558cc319c40f84132777811d38 = $(`<div id="html_a3d3d8558cc319c40f84132777811d38" style="width: 100.0%; height: 100.0%;">         <b>Cataluña</b><br>         🧍‍♂️ Turistas Nacionales: 121,108,882<br>         🛏️ Pernoctaciones: 630,617,647<br>         📊 Estancia media: 5.12 días         </div>`)[0];
+                popup_3f1a68d6ecfeeb9ecfdfe301ec665c80.setContent(html_a3d3d8558cc319c40f84132777811d38);
+            
+        
+
+        marker_5fecef5fd6d4adc3ca09f9b9242093a5.bindPopup(popup_3f1a68d6ecfeeb9ecfdfe301ec665c80)
+        ;
+
+        
+    
+    
+                marker_5fecef5fd6d4adc3ca09f9b9242093a5.setIcon(icon_49105ba11e99d35aaba6f3b9922aee77);
+            
+    
+            var marker_35996dc12751753357f4ce1b5abd308d = L.marker(
+                [39.2238, -6.3382],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_9caf2eeaf99b0a5a5770fae8737ee775 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5bf8aae7a290f428702cd45912625c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd54a13ffc85f4f48e90332b4f2bfb17 = $(`<div id="html_fd54a13ffc85f4f48e90332b4f2bfb17" style="width: 100.0%; height: 100.0%;">         <b>Extremadura</b><br>         🧍‍♂️ Turistas Nacionales: 12,902,310<br>         🛏️ Pernoctaciones: 67,873,762<br>         📊 Estancia media: 5.17 días         </div>`)[0];
+                popup_c5bf8aae7a290f428702cd45912625c3.setContent(html_fd54a13ffc85f4f48e90332b4f2bfb17);
+            
+        
+
+        marker_35996dc12751753357f4ce1b5abd308d.bindPopup(popup_c5bf8aae7a290f428702cd45912625c3)
+        ;
+
+        
+    
+    
+                marker_35996dc12751753357f4ce1b5abd308d.setIcon(icon_9caf2eeaf99b0a5a5770fae8737ee775);
+            
+    
+            var marker_9c0e4bfd988620a7ea0495e6a165417e = L.marker(
+                [42.5751, -8.1339],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_8a5ab0b47519a15cae8ee01963129abc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b77ec0059bbe32e08cf68e70c55c3097 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8a6b4a3e04e0eb72446d4d9156f5205 = $(`<div id="html_c8a6b4a3e04e0eb72446d4d9156f5205" style="width: 100.0%; height: 100.0%;">         <b>Galicia</b><br>         🧍‍♂️ Turistas Nacionales: 29,065,193<br>         🛏️ Pernoctaciones: 162,853,958<br>         📊 Estancia media: 5.4 días         </div>`)[0];
+                popup_b77ec0059bbe32e08cf68e70c55c3097.setContent(html_c8a6b4a3e04e0eb72446d4d9156f5205);
+            
+        
+
+        marker_9c0e4bfd988620a7ea0495e6a165417e.bindPopup(popup_b77ec0059bbe32e08cf68e70c55c3097)
+        ;
+
+        
+    
+    
+                marker_9c0e4bfd988620a7ea0495e6a165417e.setIcon(icon_8a5ab0b47519a15cae8ee01963129abc);
+            
+    
+            var marker_7049955664f81dbfcb55cff21d2f21c7 = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_5ec02e767ddf6a6fec0ce51f27a6b051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed1728281418834a1f667ad03d909721 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c246d1acfb6085f60c071cdcf5582dc = $(`<div id="html_1c246d1acfb6085f60c071cdcf5582dc" style="width: 100.0%; height: 100.0%;">         <b>Comunidad de Madrid</b><br>         🧍‍♂️ Turistas Nacionales: 67,986,052<br>         🛏️ Pernoctaciones: 414,693,240<br>         📊 Estancia media: 6.11 días         </div>`)[0];
+                popup_ed1728281418834a1f667ad03d909721.setContent(html_1c246d1acfb6085f60c071cdcf5582dc);
+            
+        
+
+        marker_7049955664f81dbfcb55cff21d2f21c7.bindPopup(popup_ed1728281418834a1f667ad03d909721)
+        ;
+
+        
+    
+    
+                marker_7049955664f81dbfcb55cff21d2f21c7.setIcon(icon_5ec02e767ddf6a6fec0ce51f27a6b051);
+            
+    
+            var marker_2c170cc1c333b88d182aa9f2940c7fa7 = L.marker(
+                [37.9922, -1.1307],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_582132b639e1aecfb10f911b3bd8c09f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5f1c69d2ca9aa17c19b439350634308 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c77f9738bdee661a2b1e96853d8c0e6a = $(`<div id="html_c77f9738bdee661a2b1e96853d8c0e6a" style="width: 100.0%; height: 100.0%;">         <b>Región de Murcia</b><br>         🧍‍♂️ Turistas Nacionales: 10,839,377<br>         🛏️ Pernoctaciones: 72,079,764<br>         📊 Estancia media: 6.54 días         </div>`)[0];
+                popup_f5f1c69d2ca9aa17c19b439350634308.setContent(html_c77f9738bdee661a2b1e96853d8c0e6a);
+            
+        
+
+        marker_2c170cc1c333b88d182aa9f2940c7fa7.bindPopup(popup_f5f1c69d2ca9aa17c19b439350634308)
+        ;
+
+        
+    
+    
+                marker_2c170cc1c333b88d182aa9f2940c7fa7.setIcon(icon_582132b639e1aecfb10f911b3bd8c09f);
+            
+    
+            var marker_de5192fd58c73b705d2399d89cece569 = L.marker(
+                [42.6954, -1.6761],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_2d9fcd94adf82e7eb7f96ce53ef4749c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_927c9590fc51ee828a6d8d90e3fa0769 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b019059089e302135056836eb9b9385 = $(`<div id="html_4b019059089e302135056836eb9b9385" style="width: 100.0%; height: 100.0%;">         <b>Comunidad Foral de Navarra</b><br>         🧍‍♂️ Turistas Nacionales: 8,745,494<br>         🛏️ Pernoctaciones: 41,313,999<br>         📊 Estancia media: 4.7 días         </div>`)[0];
+                popup_927c9590fc51ee828a6d8d90e3fa0769.setContent(html_4b019059089e302135056836eb9b9385);
+            
+        
+
+        marker_de5192fd58c73b705d2399d89cece569.bindPopup(popup_927c9590fc51ee828a6d8d90e3fa0769)
+        ;
+
+        
+    
+    
+                marker_de5192fd58c73b705d2399d89cece569.setIcon(icon_2d9fcd94adf82e7eb7f96ce53ef4749c);
+            
+    
+            var marker_de349cda7e364873a030dccd53e42182 = L.marker(
+                [42.2871, -2.5396],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_e80ba00da291ca3f1eae46771492a1ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ada961bb893d5e6e4f2a549d4ed43d03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9868c96a76a102eb8eb9c18be8276dec = $(`<div id="html_9868c96a76a102eb8eb9c18be8276dec" style="width: 100.0%; height: 100.0%;">         <b>La Rioja</b><br>         🧍‍♂️ Turistas Nacionales: 4,684,055<br>         🛏️ Pernoctaciones: 20,403,796<br>         📊 Estancia media: 4.28 días         </div>`)[0];
+                popup_ada961bb893d5e6e4f2a549d4ed43d03.setContent(html_9868c96a76a102eb8eb9c18be8276dec);
+            
+        
+
+        marker_de349cda7e364873a030dccd53e42182.bindPopup(popup_ada961bb893d5e6e4f2a549d4ed43d03)
+        ;
+
+        
+    
+    
+                marker_de349cda7e364873a030dccd53e42182.setIcon(icon_e80ba00da291ca3f1eae46771492a1ff);
+            
+    
+            var marker_32afebd4fa02d27c7d684a567e388d74 = L.marker(
+                [39.484, -0.7533],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_74a221e0268462e2b70bcb8f1596672f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82a1153713675aef1b8605aba761bd5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_777ffa578b89a68e1e8e3ed2f7d7e691 = $(`<div id="html_777ffa578b89a68e1e8e3ed2f7d7e691" style="width: 100.0%; height: 100.0%;">         <b>Comunitat Valenciana</b><br>         🧍‍♂️ Turistas Nacionales: 68,704,516<br>         🛏️ Pernoctaciones: 446,701,166<br>         📊 Estancia media: 6.38 días         </div>`)[0];
+                popup_82a1153713675aef1b8605aba761bd5b.setContent(html_777ffa578b89a68e1e8e3ed2f7d7e691);
+            
+        
+
+        marker_32afebd4fa02d27c7d684a567e388d74.bindPopup(popup_82a1153713675aef1b8605aba761bd5b)
+        ;
+
+        
+    
+    
+                marker_32afebd4fa02d27c7d684a567e388d74.setIcon(icon_74a221e0268462e2b70bcb8f1596672f);
+            
+    
+            var marker_e2d26581f72aac863bd867409d8dbe67 = L.marker(
+                [35.8893, -5.3198],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_cc55e0b6db6d447ab175296c6e0458b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aff27c222fdc66a1a145de7d12b5c476 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77b07102bec9dba37044b4780a1f2980 = $(`<div id="html_77b07102bec9dba37044b4780a1f2980" style="width: 100.0%; height: 100.0%;">         <b>Ceuta</b><br>         🧍‍♂️ Turistas Nacionales: 1,105,229<br>         🛏️ Pernoctaciones: 5,264,478<br>         📊 Estancia media: 4.75 días         </div>`)[0];
+                popup_aff27c222fdc66a1a145de7d12b5c476.setContent(html_77b07102bec9dba37044b4780a1f2980);
+            
+        
+
+        marker_e2d26581f72aac863bd867409d8dbe67.bindPopup(popup_aff27c222fdc66a1a145de7d12b5c476)
+        ;
+
+        
+    
+    
+                marker_e2d26581f72aac863bd867409d8dbe67.setIcon(icon_cc55e0b6db6d447ab175296c6e0458b3);
+            
+    
+            var marker_6bab69c412f00755142abc46197b3149 = L.marker(
+                [35.2937, -2.9383],
+                {
+}
+            ).addTo(map_fae34bee18eb3bfb0935d6ffaa9ab6f5);
+        
+    
+            var icon_b2628bc5d2dd487c2ab99293a02b9082 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9d1673c6037be640a3b0bd69ae30779 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0a4c25cc4d738fd8866ae9104555242 = $(`<div id="html_e0a4c25cc4d738fd8866ae9104555242" style="width: 100.0%; height: 100.0%;">         <b>Melilla</b><br>         🧍‍♂️ Turistas Nacionales: 890,668<br>         🛏️ Pernoctaciones: 4,549,248<br>         📊 Estancia media: 5.24 días         </div>`)[0];
+                popup_a9d1673c6037be640a3b0bd69ae30779.setContent(html_e0a4c25cc4d738fd8866ae9104555242);
+            
+        
+
+        marker_6bab69c412f00755142abc46197b3149.bindPopup(popup_a9d1673c6037be640a3b0bd69ae30779)
+        ;
+
+        
+    
+    
+                marker_6bab69c412f00755142abc46197b3149.setIcon(icon_b2628bc5d2dd487c2ab99293a02b9082);
+            
+</script>
+</html>

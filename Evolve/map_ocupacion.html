@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_894a461dea6f798fdccef57f690dedc9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_894a461dea6f798fdccef57f690dedc9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_894a461dea6f798fdccef57f690dedc9 = L.map(
+                "map_894a461dea6f798fdccef57f690dedc9",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5af06b37d0b583c553b50ffbd454f309 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5af06b37d0b583c553b50ffbd454f309.addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var marker_d0a05fc627f65e35ea5559c8c3ccc84c = L.marker(
+                [37.5443, -4.7278],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_c3b42157ab71b304809c9d4c38ec001c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a4b2d4f794eab2ab863cbe145a101a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4958807bfeb0a4b954c79ad731a370d = $(`<div id="html_c4958807bfeb0a4b954c79ad731a370d" style="width: 100.0%; height: 100.0%;">Andalucía: 76.9%</div>`)[0];
+                popup_5a4b2d4f794eab2ab863cbe145a101a7.setContent(html_c4958807bfeb0a4b954c79ad731a370d);
+            
+        
+
+        marker_d0a05fc627f65e35ea5559c8c3ccc84c.bindPopup(popup_5a4b2d4f794eab2ab863cbe145a101a7)
+        ;
+
+        
+    
+    
+                marker_d0a05fc627f65e35ea5559c8c3ccc84c.setIcon(icon_c3b42157ab71b304809c9d4c38ec001c);
+            
+    
+            var marker_118685770d550f1c52b5612b7dcb5438 = L.marker(
+                [41.5976, -0.9057],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_b7c9a1cf19039363605ac5974b918c34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95e44c854065469d16df5f4e4443b41c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebda4567a864691a1530c2076bd9a64f = $(`<div id="html_ebda4567a864691a1530c2076bd9a64f" style="width: 100.0%; height: 100.0%;">Aragón: 62.2%</div>`)[0];
+                popup_95e44c854065469d16df5f4e4443b41c.setContent(html_ebda4567a864691a1530c2076bd9a64f);
+            
+        
+
+        marker_118685770d550f1c52b5612b7dcb5438.bindPopup(popup_95e44c854065469d16df5f4e4443b41c)
+        ;
+
+        
+    
+    
+                marker_118685770d550f1c52b5612b7dcb5438.setIcon(icon_b7c9a1cf19039363605ac5974b918c34);
+            
+    
+            var marker_9245dd1abe7cbdf6f150cc1de62c68e0 = L.marker(
+                [28.2916, -16.6291],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_2d4e70dbd260a65da03380ab04c094b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7d37e7a43c072d8a6fe4f751c517baa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e5e685a9284b240664ba8e6fa0184f8 = $(`<div id="html_4e5e685a9284b240664ba8e6fa0184f8" style="width: 100.0%; height: 100.0%;">Canarias: 85.1%</div>`)[0];
+                popup_f7d37e7a43c072d8a6fe4f751c517baa.setContent(html_4e5e685a9284b240664ba8e6fa0184f8);
+            
+        
+
+        marker_9245dd1abe7cbdf6f150cc1de62c68e0.bindPopup(popup_f7d37e7a43c072d8a6fe4f751c517baa)
+        ;
+
+        
+    
+    
+                marker_9245dd1abe7cbdf6f150cc1de62c68e0.setIcon(icon_2d4e70dbd260a65da03380ab04c094b1);
+            
+    
+            var marker_6d6dd7bc93bb4bbb27af87d474fd6e37 = L.marker(
+                [43.1828, -3.9878],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_a4ed1fba6f2efaeea27e42893d2d6fb4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_518a88edf5ba495998aee818b1de588e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a923222b2ad2d6d15d67705a98e570e2 = $(`<div id="html_a923222b2ad2d6d15d67705a98e570e2" style="width: 100.0%; height: 100.0%;">Cantabria: 80.2%</div>`)[0];
+                popup_518a88edf5ba495998aee818b1de588e.setContent(html_a923222b2ad2d6d15d67705a98e570e2);
+            
+        
+
+        marker_6d6dd7bc93bb4bbb27af87d474fd6e37.bindPopup(popup_518a88edf5ba495998aee818b1de588e)
+        ;
+
+        
+    
+    
+                marker_6d6dd7bc93bb4bbb27af87d474fd6e37.setIcon(icon_a4ed1fba6f2efaeea27e42893d2d6fb4);
+            
+    
+            var marker_8f14a2c6a9469f7d398e613a7fff0862 = L.marker(
+                [39.2796, -3.0977],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_622c8d47228d5e3ab5e0237437e0824a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c289ede6f32c02fad51730d9709998eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7caa141e5c0af605517aebd27c0c957e = $(`<div id="html_7caa141e5c0af605517aebd27c0c957e" style="width: 100.0%; height: 100.0%;">Castilla - La Mancha: 42.9%</div>`)[0];
+                popup_c289ede6f32c02fad51730d9709998eb.setContent(html_7caa141e5c0af605517aebd27c0c957e);
+            
+        
+
+        marker_8f14a2c6a9469f7d398e613a7fff0862.bindPopup(popup_c289ede6f32c02fad51730d9709998eb)
+        ;
+
+        
+    
+    
+                marker_8f14a2c6a9469f7d398e613a7fff0862.setIcon(icon_622c8d47228d5e3ab5e0237437e0824a);
+            
+    
+            var marker_f66c5c0fe103d1a8ef0256062b068fa5 = L.marker(
+                [41.8357, -4.3976],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_4e06f6a32e92cc4b19c3d1b94ab7e8f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_92adc8b58c4c30fc58c7e2e057341390 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5656273870910837af361268f520b023 = $(`<div id="html_5656273870910837af361268f520b023" style="width: 100.0%; height: 100.0%;">Castilla y León: 60.5%</div>`)[0];
+                popup_92adc8b58c4c30fc58c7e2e057341390.setContent(html_5656273870910837af361268f520b023);
+            
+        
+
+        marker_f66c5c0fe103d1a8ef0256062b068fa5.bindPopup(popup_92adc8b58c4c30fc58c7e2e057341390)
+        ;
+
+        
+    
+    
+                marker_f66c5c0fe103d1a8ef0256062b068fa5.setIcon(icon_4e06f6a32e92cc4b19c3d1b94ab7e8f7);
+            
+    
+            var marker_51703b59b1f1db805b13936b67b8633c = L.marker(
+                [41.8205, 1.8677],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_ddb4fe4042675b0176e9f6f7a3cc9adb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40b9913b20e8ef2d779e4cedc7fbf8d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92834e45c6180d64da9a7ac48223cd97 = $(`<div id="html_92834e45c6180d64da9a7ac48223cd97" style="width: 100.0%; height: 100.0%;">Cataluña: 84.4%</div>`)[0];
+                popup_40b9913b20e8ef2d779e4cedc7fbf8d6.setContent(html_92834e45c6180d64da9a7ac48223cd97);
+            
+        
+
+        marker_51703b59b1f1db805b13936b67b8633c.bindPopup(popup_40b9913b20e8ef2d779e4cedc7fbf8d6)
+        ;
+
+        
+    
+    
+                marker_51703b59b1f1db805b13936b67b8633c.setIcon(icon_ddb4fe4042675b0176e9f6f7a3cc9adb);
+            
+    
+            var marker_ace59eecfc8649cf2fb9ccba700df3a0 = L.marker(
+                [35.8893, -5.3198],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_3493122d2edec96e37b5fbb5e32e6bf1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5bb02af8172517521319aad991e2385 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1be85eb9bcd446140254f256656106b3 = $(`<div id="html_1be85eb9bcd446140254f256656106b3" style="width: 100.0%; height: 100.0%;">Ceuta: 71.9%</div>`)[0];
+                popup_c5bb02af8172517521319aad991e2385.setContent(html_1be85eb9bcd446140254f256656106b3);
+            
+        
+
+        marker_ace59eecfc8649cf2fb9ccba700df3a0.bindPopup(popup_c5bb02af8172517521319aad991e2385)
+        ;
+
+        
+    
+    
+                marker_ace59eecfc8649cf2fb9ccba700df3a0.setIcon(icon_3493122d2edec96e37b5fbb5e32e6bf1);
+            
+    
+            var marker_5b71ce837299e770aa20e95a3a70941b = L.marker(
+                [42.6954, -1.6761],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_91e3d244b207b48455012bdc87dae283 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6964c1296d67f673196c0e4dc81bc792 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27e60eabec15e68beb20f0ac589c786e = $(`<div id="html_27e60eabec15e68beb20f0ac589c786e" style="width: 100.0%; height: 100.0%;">Comunidad Foral de Navarra: 76.2%</div>`)[0];
+                popup_6964c1296d67f673196c0e4dc81bc792.setContent(html_27e60eabec15e68beb20f0ac589c786e);
+            
+        
+
+        marker_5b71ce837299e770aa20e95a3a70941b.bindPopup(popup_6964c1296d67f673196c0e4dc81bc792)
+        ;
+
+        
+    
+    
+                marker_5b71ce837299e770aa20e95a3a70941b.setIcon(icon_91e3d244b207b48455012bdc87dae283);
+            
+    
+            var marker_7fcdbbb73b1efaa6a868098f5f6d7c6b = L.marker(
+                [40.4168, -3.7038],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_eee7642bf329c1cd338edd54e8b28890 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bcc5e807d89de4b1a51961b12617d32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcdc8f7e41bd9ff3337b9c436ee051c6 = $(`<div id="html_dcdc8f7e41bd9ff3337b9c436ee051c6" style="width: 100.0%; height: 100.0%;">Comunidad de Madrid: 82.9%</div>`)[0];
+                popup_9bcc5e807d89de4b1a51961b12617d32.setContent(html_dcdc8f7e41bd9ff3337b9c436ee051c6);
+            
+        
+
+        marker_7fcdbbb73b1efaa6a868098f5f6d7c6b.bindPopup(popup_9bcc5e807d89de4b1a51961b12617d32)
+        ;
+
+        
+    
+    
+                marker_7fcdbbb73b1efaa6a868098f5f6d7c6b.setIcon(icon_eee7642bf329c1cd338edd54e8b28890);
+            
+    
+            var marker_49e01554d660ae29b2b5b4b201d3ed47 = L.marker(
+                [39.484, -0.7533],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_fd36f8f8ae62eee7cf1bf91910ce5ebf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11ec2870a551916e2b7b72493df34134 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c7da57d3630d2af835072ed0351db0a = $(`<div id="html_9c7da57d3630d2af835072ed0351db0a" style="width: 100.0%; height: 100.0%;">Comunitat Valenciana: 60.4%</div>`)[0];
+                popup_11ec2870a551916e2b7b72493df34134.setContent(html_9c7da57d3630d2af835072ed0351db0a);
+            
+        
+
+        marker_49e01554d660ae29b2b5b4b201d3ed47.bindPopup(popup_11ec2870a551916e2b7b72493df34134)
+        ;
+
+        
+    
+    
+                marker_49e01554d660ae29b2b5b4b201d3ed47.setIcon(icon_fd36f8f8ae62eee7cf1bf91910ce5ebf);
+            
+    
+            var marker_c057133d38af40f9a108c25a36788674 = L.marker(
+                [39.2238, -6.3382],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_affa6a164ae4bc98eac41797cc4aff68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e8f3075997be6f6c16fe497f05f0680 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f6cec076b87e8ea16043dd0c2280312 = $(`<div id="html_6f6cec076b87e8ea16043dd0c2280312" style="width: 100.0%; height: 100.0%;">Extremadura: 53.9%</div>`)[0];
+                popup_0e8f3075997be6f6c16fe497f05f0680.setContent(html_6f6cec076b87e8ea16043dd0c2280312);
+            
+        
+
+        marker_c057133d38af40f9a108c25a36788674.bindPopup(popup_0e8f3075997be6f6c16fe497f05f0680)
+        ;
+
+        
+    
+    
+                marker_c057133d38af40f9a108c25a36788674.setIcon(icon_affa6a164ae4bc98eac41797cc4aff68);
+            
+    
+            var marker_7b7c7404a1c54c9333a3b2a910483298 = L.marker(
+                [42.5751, -8.1339],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_793ddd1f72ba54c6cef5950438d51b9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14f13866acbcad5e3e0fbfb7acd8c201 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca5daf521464776d70e7bb15dea145ed = $(`<div id="html_ca5daf521464776d70e7bb15dea145ed" style="width: 100.0%; height: 100.0%;">Galicia: 72.0%</div>`)[0];
+                popup_14f13866acbcad5e3e0fbfb7acd8c201.setContent(html_ca5daf521464776d70e7bb15dea145ed);
+            
+        
+
+        marker_7b7c7404a1c54c9333a3b2a910483298.bindPopup(popup_14f13866acbcad5e3e0fbfb7acd8c201)
+        ;
+
+        
+    
+    
+                marker_7b7c7404a1c54c9333a3b2a910483298.setIcon(icon_793ddd1f72ba54c6cef5950438d51b9a);
+            
+    
+            var marker_13dd3d7fe2385a58ddf71580a83592f0 = L.marker(
+                [39.6953, 3.0176],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_24442da189c540a49933785f614f7817 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a742b5a3405d4cb761697acc249b79e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d17c978a0a5ba4ca3eb2a20a7ec2febc = $(`<div id="html_d17c978a0a5ba4ca3eb2a20a7ec2febc" style="width: 100.0%; height: 100.0%;">Illes Balears: 91.7%</div>`)[0];
+                popup_8a742b5a3405d4cb761697acc249b79e.setContent(html_d17c978a0a5ba4ca3eb2a20a7ec2febc);
+            
+        
+
+        marker_13dd3d7fe2385a58ddf71580a83592f0.bindPopup(popup_8a742b5a3405d4cb761697acc249b79e)
+        ;
+
+        
+    
+    
+                marker_13dd3d7fe2385a58ddf71580a83592f0.setIcon(icon_24442da189c540a49933785f614f7817);
+            
+    
+            var marker_f13408577050ad2ad0f8f5fcc05b3655 = L.marker(
+                [42.2871, -2.5396],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_1e8aac0ee06fefd77f8b098a3a0e9bac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77af28fa8b550d42713aeb586d011b18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_686461313ba3b98b4d2ffad0066e1670 = $(`<div id="html_686461313ba3b98b4d2ffad0066e1670" style="width: 100.0%; height: 100.0%;">La Rioja: 63.2%</div>`)[0];
+                popup_77af28fa8b550d42713aeb586d011b18.setContent(html_686461313ba3b98b4d2ffad0066e1670);
+            
+        
+
+        marker_f13408577050ad2ad0f8f5fcc05b3655.bindPopup(popup_77af28fa8b550d42713aeb586d011b18)
+        ;
+
+        
+    
+    
+                marker_f13408577050ad2ad0f8f5fcc05b3655.setIcon(icon_1e8aac0ee06fefd77f8b098a3a0e9bac);
+            
+    
+            var marker_6b067fcfc48ea307e67312f83b436d5d = L.marker(
+                [35.2937, -2.9383],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_c9ed122f34d3b009a8502c40c5cb38d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20770626e7593c557d39b40c508ccc65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_613fac646b4767826c1ab495a275edb8 = $(`<div id="html_613fac646b4767826c1ab495a275edb8" style="width: 100.0%; height: 100.0%;">Melilla: 72.9%</div>`)[0];
+                popup_20770626e7593c557d39b40c508ccc65.setContent(html_613fac646b4767826c1ab495a275edb8);
+            
+        
+
+        marker_6b067fcfc48ea307e67312f83b436d5d.bindPopup(popup_20770626e7593c557d39b40c508ccc65)
+        ;
+
+        
+    
+    
+                marker_6b067fcfc48ea307e67312f83b436d5d.setIcon(icon_c9ed122f34d3b009a8502c40c5cb38d8);
+            
+    
+            var marker_576855d335648292c33f8c5199892218 = L.marker(
+                [43.0433, -2.4125],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_9a2981f78eb9696c34aad65ed492de44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8bb89ff6f76d43e027e769b4d129f36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_595915e58bc71439167df914a5fdf870 = $(`<div id="html_595915e58bc71439167df914a5fdf870" style="width: 100.0%; height: 100.0%;">País Vasco: 86.2%</div>`)[0];
+                popup_b8bb89ff6f76d43e027e769b4d129f36.setContent(html_595915e58bc71439167df914a5fdf870);
+            
+        
+
+        marker_576855d335648292c33f8c5199892218.bindPopup(popup_b8bb89ff6f76d43e027e769b4d129f36)
+        ;
+
+        
+    
+    
+                marker_576855d335648292c33f8c5199892218.setIcon(icon_9a2981f78eb9696c34aad65ed492de44);
+            
+    
+            var marker_5961ada550665ea4a2e61c5bd8bfdec4 = L.marker(
+                [43.3614, -5.8593],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_37c3b3ea9eca58a4ce3c1a6c286763c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6663824c9165b849e70d038af7002a1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ea9ba76a979cc188070eb350084fc71 = $(`<div id="html_5ea9ba76a979cc188070eb350084fc71" style="width: 100.0%; height: 100.0%;">Principado de Asturias: 80.8%</div>`)[0];
+                popup_6663824c9165b849e70d038af7002a1c.setContent(html_5ea9ba76a979cc188070eb350084fc71);
+            
+        
+
+        marker_5961ada550665ea4a2e61c5bd8bfdec4.bindPopup(popup_6663824c9165b849e70d038af7002a1c)
+        ;
+
+        
+    
+    
+                marker_5961ada550665ea4a2e61c5bd8bfdec4.setIcon(icon_37c3b3ea9eca58a4ce3c1a6c286763c9);
+            
+    
+            var marker_960fbced064ca2f16b088605946628af = L.marker(
+                [37.9922, -1.1307],
+                {
+}
+            ).addTo(map_894a461dea6f798fdccef57f690dedc9);
+        
+    
+            var icon_6d5bcf556fcaa51497a9e4054abc9a8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccc16af44db1b48d9a788c983aa5952f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a001ea017312012b4fa5d0a137caa5b3 = $(`<div id="html_a001ea017312012b4fa5d0a137caa5b3" style="width: 100.0%; height: 100.0%;">Región de Murcia: 67.2%</div>`)[0];
+                popup_ccc16af44db1b48d9a788c983aa5952f.setContent(html_a001ea017312012b4fa5d0a137caa5b3);
+            
+        
+
+        marker_960fbced064ca2f16b088605946628af.bindPopup(popup_ccc16af44db1b48d9a788c983aa5952f)
+        ;
+
+        
+    
+    
+                marker_960fbced064ca2f16b088605946628af.setIcon(icon_6d5bcf556fcaa51497a9e4054abc9a8a);
+            
+</script>
+</html>
