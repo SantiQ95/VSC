@@ -18,12 +18,14 @@ Thumbs.db
 *.lot
 *.fls
 *.out
-*.toc
-*.blg
-*.bbl
-*.nav
-*.snm
-*.vrb
+
+# Data files
+df_tabla1
+df_tabla2
+df_tabla3
+nuevos_partidos_post2008
+
+# Archive files
 *.vsc
 *.gz
 *.zip
@@ -66,7 +68,6 @@ cache/
 # Environment variables and secrets
 .env
 .flaskenv
-.venv/
 
 # Testing and Coverage
 .nyc_output/
@@ -88,8 +89,13 @@ downloads/
 # Thumbnails and generated images
 *.thumbnails
 *.thumb
+
 # Python virtual environments
+venv/
+env/
+ENV/
+.env/
 .venv/
 venv/
 env/
-.env
+tfg_env/
