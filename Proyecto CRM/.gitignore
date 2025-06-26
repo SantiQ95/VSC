@@ -1,0 +1,20 @@
+# Python virtual environment
+venv/
+
+# Environment variable file (for MongoDB URI, API keys, etc.)
+.env
+
+# Python cache and artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE/editor configs (optional but common)
+.vscode/
+*.swp
+.DS_Store
+.idea/
+
+# Logs or temporary files (optional)
+*.log
+*.tmp
